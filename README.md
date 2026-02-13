@@ -17,23 +17,23 @@
 
 ## 项目结构
 
-transformer/
-│
-├── `data/`                  # 数据文件
-│   └── `json/`
-│
-├── `tokenizer/`             # SentencePiece 分词模型
-│
-├── `results/`               # 训练结果与曲线
-│
-├── `transformer_model.py`   # 模型结构定义
-├── `beam_decoder.py`        # Beam Search 解码
-├── `train.py`               # 训练入口
-├── `translate.py`           # 推理入口
-├── `data_loader.py`         # 数据加载与 mask 构造
-├── `utils.py`               # 工具函数
-├── `config.py `             # 参数配置
-└── `requirements.txt`
+transformer/  
+│   
+├── `data/`                  # 数据文件  
+│   └── `json/`  
+│  
+├── `tokenizer/`             # SentencePiece 分词模型  
+│  
+├── `results/`               # 训练结果与曲线  
+│  
+├── `transformer_model.py`   # 模型结构定义  
+├── `beam_decoder.py`        # Beam Search 解码  
+├── `train.py`               # 训练入口  
+├── `translate.py`           # 推理入口  
+├── `data_loader.py`         # 数据加载与 mask 构造  
+├── `utils.py`               # 工具函数  
+├── `config.py `             # 参数配置  
+└── `requirements.txt`  
 
 ## 环境
 

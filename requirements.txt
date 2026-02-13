@@ -1,0 +1,8 @@
+#  python=3.10
+# torch==1.12.1，CUDA=11.3
+
+tqdm==4.67.1
+sentencepiece==0.2.1
+sacrebleu==2.5.1
+numpy==1.23.3
+Matplotlib==3.10.8

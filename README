@@ -1,41 +1,41 @@
-# Transformer ÖĞÓ¢·­Òë
+# Transformer ä¸­è‹±ç¿»è¯‘
 
 
-±¾ÏîÄ¿»ùÓÚ PyTorch ´ÓÁãÊµÏÖ±ê×¼ Transformer£¨Encoder¨CDecoder£©½á¹¹£¬ÓÃÓÚÖĞÓ¢»úÆ÷·­ÒëÈÎÎñ¡£
+æœ¬é¡¹ç›®åŸºäº PyTorch ä»é›¶å®ç°æ ‡å‡† Transformerï¼ˆEncoderâ€“Decoderï¼‰ç»“æ„ï¼Œç”¨äºä¸­è‹±æœºå™¨ç¿»è¯‘ä»»åŠ¡ã€‚
 
-ÊµÏÖÄÚÈİ°üÀ¨£º
+å®ç°å†…å®¹åŒ…æ‹¬ï¼š
 
-- ¶àÍ·×¢ÒâÁ¦£¨Multi-Head Attention£©
-- Î»ÖÃ±àÂë£¨Positional Encoding£©
-- Encoder¨CDecoder ½á¹¹¶Ñµş
-- Padding Mask Óë Subsequent Mask ¹¹Ôì
-- Teacher Forcing ÑµÁ·»úÖÆ
-- Beam Search ½âÂë
-- BLEU Ö¸±êÆÀ¹À
-- ÑµÁ·ÇúÏß¿ÉÊÓ»¯
+- å¤šå¤´æ³¨æ„åŠ›ï¼ˆMulti-Head Attentionï¼‰
+- ä½ç½®ç¼–ç ï¼ˆPositional Encodingï¼‰
+- Encoderâ€“Decoder ç»“æ„å †å 
+- Padding Mask ä¸ Subsequent Mask æ„é€ 
+- Teacher Forcing è®­ç»ƒæœºåˆ¶
+- Beam Search è§£ç 
+- BLEU æŒ‡æ ‡è¯„ä¼°
+- è®­ç»ƒæ›²çº¿å¯è§†åŒ–
 
 
-## ÏîÄ¿½á¹¹
+## é¡¹ç›®ç»“æ„
 
 transformer/
-©¦
-©À©¤©¤ data/                  # Êı¾İÎÄ¼ş
-©¦   ©¸©¤©¤ json/
-©¦
-©À©¤©¤ tokenizer/             # SentencePiece ·Ö´ÊÄ£ĞÍ
-©¦
-©À©¤©¤ results/               # ÑµÁ·½á¹ûÓëÇúÏß
-©¦
-©À©¤©¤ transformer_model.py   # Ä£ĞÍ½á¹¹¶¨Òå
-©À©¤©¤ beam_decoder.py        # Beam Search ½âÂë
-©À©¤©¤ train.py               # ÑµÁ·Èë¿Ú
-©À©¤©¤ translate.py           # ÍÆÀíÈë¿Ú
-©À©¤©¤ data_loader.py         # Êı¾İ¼ÓÔØÓë mask ¹¹Ôì
-©À©¤©¤ utils.py               # ¹¤¾ßº¯Êı
-©À©¤©¤ config.py              # ²ÎÊıÅäÖÃ
-©¸©¤©¤ requirements.txt
+â”‚
+â”œâ”€â”€ data/                  # æ•°æ®æ–‡ä»¶
+â”‚   â””â”€â”€ json/
+â”‚
+â”œâ”€â”€ tokenizer/             # SentencePiece åˆ†è¯æ¨¡å‹
+â”‚
+â”œâ”€â”€ results/               # è®­ç»ƒç»“æœä¸æ›²çº¿
+â”‚
+â”œâ”€â”€ transformer_model.py   # æ¨¡å‹ç»“æ„å®šä¹‰
+â”œâ”€â”€ beam_decoder.py        # Beam Search è§£ç 
+â”œâ”€â”€ train.py               # è®­ç»ƒå…¥å£
+â”œâ”€â”€ translate.py           # æ¨ç†å…¥å£
+â”œâ”€â”€ data_loader.py         # æ•°æ®åŠ è½½ä¸ mask æ„é€ 
+â”œâ”€â”€ utils.py               # å·¥å…·å‡½æ•°
+â”œâ”€â”€ config.py              # å‚æ•°é…ç½®
+â””â”€â”€ requirements.txt
 
-## »·¾³
+## ç¯å¢ƒ
 
 - python=3.10
 - torch==1.12.1  CUDA=11.3
@@ -45,9 +45,9 @@ transformer/
 - numpy==1.23.3
 - Matplotlib==3.10.8
 
-## ÑµÁ··½·¨
-- ÔËĞĞ train.py ¿ªÊ¼ÑµÁ·£¬Ä£ĞÍÈ¨ÖØ±£´æÎ»ÖÃ results/best_bleu_xx.pth
-- ÔËĞĞ translate.py ÍÆÀí
+## è®­ç»ƒæ–¹æ³•
+- è¿è¡Œ train.py å¼€å§‹è®­ç»ƒï¼Œæ¨¡å‹æƒé‡ä¿å­˜ä½ç½® results/best_bleu_xx.pth
+- è¿è¡Œ translate.py æ¨ç†
 
 
 
